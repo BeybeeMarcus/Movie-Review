@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <style>
+      small {
+          color: crimson;
+      }
+  </style>
+  </head>
+  <body>
+    <form id="reviewForm">
+      <label for="title">Movie Title:</label>
+      <input type="text" name="title" id="title" style="margin-left: 25px" />
+      <br>
+      <small id="titleError" style="margin-left: 130px;"></small>
+      <br /><br />
+
+      <label for="year">Released Year:</label>
+      <input type="text" name="year" id="year" style="margin-left: 10px" />
+      <br>
+      <small id="yearError" style="margin-left: 130px;"></small>
+      <br /><br />
+
+      <label for="review">Review:</label>
+      
+      <br /><br />
+      <textarea
+        name="review"
+        id="review"
+        cols="30"
+        rows="10"
+        style="width: 280px"
+      ></textarea>
+      <br /><br />
+
+      <input type="submit" value="Add Review" />
+    </form>
+    <div id="display">
+      <pre></pre>
+    </div>
+    <br><br><br>
+    <button id="retrieveBtn">Show Local Storage</button>
+    
+    <form id="removeForm"><br><br><br>
+      <label for="removeId">Enter the ID of the review you want to remove:</label>
+      <input type="text" name="removeID" id="removeID" style="margin-left: 10px"/>
+      <input style="margin-left: 10px" type="button" value="Remove" id="removeBtn" />
+      <button id="removeAllBtn">Remove All</button>
+    </form>
+    <small id="reviewError" style="margin-left: 350px"></small>
+    <br><br>
+    <table id="reviewsTable" width="80%" border="1px"" >
+      <tr>
+
+        
+        <th>Review ID</th>
+        <th>Movie Title</th>
+        <th>Released Year</th>
+        <th>Review</th>
+
+
+      </tr>
+
+
+    </table>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
